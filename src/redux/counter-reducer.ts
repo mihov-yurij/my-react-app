@@ -1,4 +1,4 @@
-import { Actions } from './actions';
+import { Actions } from './actions.ts';
 
 export type CounterType = {
   count: number;

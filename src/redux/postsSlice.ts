@@ -33,9 +33,8 @@ export const postsSlice = createSlice({
       state.status = 'loading';
       state.error = null;
     });
-    builder.addCase(fetchPostsThunk.fulfilled, (state, action) => {
-      state.status = 'succeeded';
-      state.posts = action.payload;
+    builder.addCase(fetchPostsThunk.fulfilled, (state, action) => {  state.status = 'succeeded';
+      state.error = null;
     });
     builder.addCase(fetchPostsThunk.rejected, (state, action) => {
       state.status = 'failed';

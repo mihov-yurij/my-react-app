@@ -5,7 +5,7 @@ import {
   postsSliceSelector,
   postsStatusSelector,
   type Post,
-} from '../redux/postsSlice';
+} from '../redux/postsSlice.ts';
 import { useEffect } from 'react';
 import type { AppDispatch } from '../redux/store';
 import SinglePost from './SinglePost';

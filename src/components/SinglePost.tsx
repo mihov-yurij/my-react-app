@@ -1,5 +1,5 @@
-import { type Post } from '../redux/postsSlice';
-import AuthorName from './AuthorName';
+import { type Post } from '../redux/postsSlice.ts';
+import AuthorName from './AuthorName.tsx';
 
 const SinglePost = (post: Post) => {
   return (
