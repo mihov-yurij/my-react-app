@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import type { StoreType } from './store';
-import { fetchPosts } from './api/fetchPosts';
-import type { ResponseStatus } from './types';
+import type { StoreType } from './store.ts';
+import { fetchPosts } from './api/fetchPosts.ts';
+import type { ResponseStatus } from './types/index.ts';
 
 export type Post = {
   id: number;

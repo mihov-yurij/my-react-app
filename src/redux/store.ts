@@ -2,10 +2,10 @@ import postsSlice from './postsSlice.ts';
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from './counterSlice.ts';
 import usersSlice from './usersSlice.ts';
-import jsonPlaceHolderApi from './api/hooks/index';
+import jsonPlaceHolderApi from './api/hooks/index.ts';
 
-import postsReducer from './postsSlice';
-import usersReducer from './usersSlice';
+import postsReducer from './postsSlice.ts';
+import usersReducer from './usersSlice.ts';
 
 export const store = configureStore({
   reducer: {

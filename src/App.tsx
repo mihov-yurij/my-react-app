@@ -1,7 +1,7 @@
 import './App.css';
-import { useGetTodosQuery } from './redux/api/hooks';
+import { useGetTodosQuery } from './redux/api/hooks/index.ts';
 
-import Posts from './components/Posts';
+import Posts from './components/Posts.tsx';
 
 function App() {
   const { data, isLoading } = useGetTodosQuery('');
