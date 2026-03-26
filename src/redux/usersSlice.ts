@@ -2,10 +2,11 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import type { StoreType } from './store';
 import { fetchUsers } from './api/fetchUsers';
 
-export type User = {
+
+export interface User {
   id: number;
-  name: string;
-};
+  name: string; 
+  }
 
 export type UsersReducerType = {
   users: User[];

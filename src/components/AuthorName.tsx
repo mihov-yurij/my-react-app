@@ -1,6 +1,7 @@
 import type { Post } from '../redux/postsSlice.ts';
 import { useSelector } from 'react-redux';
 import { usersSliceSelector } from '../redux/usersSlice.ts';
+import type { User } from '../redux/usersSlice';
 
 const AuthorName = ({ userId }: { userId: Post['userId'] }) => {
   const users = useSelector(usersSliceSelector);
